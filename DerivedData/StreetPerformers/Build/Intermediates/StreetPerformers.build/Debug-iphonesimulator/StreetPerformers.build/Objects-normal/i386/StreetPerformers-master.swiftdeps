@@ -1,8 +1,0 @@
-version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
-options: "898f3507f8a72f00471b976f74067254"
-build_time: [508117933, 236568000]
-inputs:
-  "/Users/Emma/Documents/Street-Performer/StreetPerformers/AppDelegate.swift": [508101095, 0]
-  "/Users/Emma/Documents/Street-Performer/StreetPerformers/SearchViewController.swift": [508112302, 0]
-  "/Users/Emma/Documents/Street-Performer/StreetPerformers/FirstViewController.swift": [508101095, 0]
-  "/Users/Emma/Documents/Street-Performer/StreetPerformers/SecondViewController.swift": [508101095, 0]
