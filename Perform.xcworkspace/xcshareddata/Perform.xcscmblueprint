@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8DAF63DD1896051625B575F80B2FD2CB18149CF3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AC96CD124DAF39A796E8DF51F8D9E9ED0E815BBF" : 0,
+    "8DAF63DD1896051625B575F80B2FD2CB18149CF3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1452FB54-7563-4462-8748-3C36F65C3D6F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AC96CD124DAF39A796E8DF51F8D9E9ED0E815BBF" : "streetperformers\/",
+    "8DAF63DD1896051625B575F80B2FD2CB18149CF3" : "Street-Performer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Perform",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Perform.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Yusef1000\/Street-Performer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8DAF63DD1896051625B575F80B2FD2CB18149CF3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/jacob_ruth\/streetperformers.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AC96CD124DAF39A796E8DF51F8D9E9ED0E815BBF"
+    }
+  ]
+}
