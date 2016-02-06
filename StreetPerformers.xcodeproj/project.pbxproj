@@ -14,6 +14,7 @@
 		168DA2421C66771A00BF983C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 168DA2411C66771A00BF983C /* Assets.xcassets */; };
 		168DA2451C66771A00BF983C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168DA2431C66771A00BF983C /* LaunchScreen.storyboard */; };
 		168DA2501C66771A00BF983C /* StreetPerformersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DA24F1C66771A00BF983C /* StreetPerformersUITests.swift */; };
+		16FA8F991C66BFA800AC454B /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA8F981C66BFA800AC454B /* Upload.swift */; };
 		B5ADCAB41C66A64700D8D123 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ADCAB31C66A64700D8D123 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		168DA24B1C66771A00BF983C /* StreetPerformersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreetPerformersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		168DA24F1C66771A00BF983C /* StreetPerformersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetPerformersUITests.swift; sourceTree = "<group>"; };
 		168DA2511C66771A00BF983C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FA8F981C66BFA800AC454B /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
 		B5ADCAB31C66A64700D8D123 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = "../Street-Performer/StreetPerformers/SearchViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 		168DA25C1C667D9900BF983C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				16FA8F981C66BFA800AC454B /* Upload.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				168DA23D1C66771A00BF983C /* SecondViewController.swift in Sources */,
+				16FA8F991C66BFA800AC454B /* Upload.swift in Sources */,
 				168DA2391C66771A00BF983C /* AppDelegate.swift in Sources */,
 				B5ADCAB41C66A64700D8D123 /* SearchViewController.swift in Sources */,
 				168DA23B1C66771A00BF983C /* FirstViewController.swift in Sources */,
