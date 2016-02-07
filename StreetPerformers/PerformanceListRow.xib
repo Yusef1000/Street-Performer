@@ -36,12 +36,13 @@
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKC-HQ-QgY" customClass="StarsView" customModule="StreetPerformers" customModuleProvider="target">
                         <rect key="frame" x="143" y="37" width="283" height="31"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="FKC-HQ-QgY" secondAttribute="height" multiplier="9:1" id="7d9-en-dPH"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="FKC-HQ-QgY" firstAttribute="top" secondItem="tL9-PZ-P19" secondAttribute="bottom" constant="8" id="BD6-e9-XXc"/>
                     <constraint firstAttribute="leadingMargin" secondItem="HON-dN-mHj" secondAttribute="leading" id="E0T-d2-TPZ"/>
