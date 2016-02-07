@@ -28,6 +28,10 @@
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
+		<string>still-camera</string>
+		<string>gps</string>
+		<string>location-services</string>
+		<string>video-camera</string>
 		<string>armv7</string>
 	</array>
 	<key>UIStatusBarTintParameters</key>
