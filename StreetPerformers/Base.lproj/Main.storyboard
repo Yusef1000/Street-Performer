@@ -208,13 +208,13 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bck-q3-ap4" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="4" y="83" width="592" height="868"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4P-IN-U0o" userLabel="ContentView">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4P-IN-U0o" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="868"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share page backdrop (slow scroll)" translatesAutoresizingMaskIntoConstraints="NO" id="bhC-gr-A2v">
+                                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="share page backdrop (slow scroll)" translatesAutoresizingMaskIntoConstraints="NO" id="bhC-gr-A2v">
                                                 <rect key="frame" x="-7" y="0.0" width="607" height="498"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoG-wj-kzs" userLabel="CameraButton">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoG-wj-kzs" userLabel="CameraButton">
                                                 <rect key="frame" x="241" y="616" width="119" height="119"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="click-1"/>
@@ -222,7 +222,7 @@
                                                     <action selector="loadImageButtonTapped:" destination="NSw-Eq-7jL" eventType="touchUpInside" id="iqg-8I-ug0"/>
                                                 </connections>
                                             </button>
-                                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jlc-1R-2e5">
+                                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jlc-1R-2e5">
                                                 <rect key="frame" x="0.0" y="661" width="600" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -233,21 +233,21 @@
                                                     <constraint firstAttribute="width" secondItem="YR2-bn-yJ7" secondAttribute="height" id="ydy-da-h9J"/>
                                                 </constraints>
                                             </imageView>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9WK-C5-Wep" customClass="StarsView" customModule="StreetPerformers" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9WK-C5-Wep" customClass="StarsView" customModule="StreetPerformers" customModuleProvider="target">
                                                 <rect key="frame" x="63" y="612" width="600" height="67"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="9WK-C5-Wep" secondAttribute="height" multiplier="9:1" id="hYZ-s4-36N"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwg-ce-NbQ">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwg-ce-NbQ">
                                                 <rect key="frame" x="269" y="711" width="62" height="30"/>
                                                 <state key="normal" title="Continue"/>
                                                 <connections>
                                                     <action selector="donePressed" destination="NSw-Eq-7jL" eventType="touchUpInside" id="ybx-OQ-uf9"/>
                                                 </connections>
                                             </button>
-                                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWc-T6-dxa">
+                                            <pickerView hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWc-T6-dxa">
                                                 <rect key="frame" x="0.0" y="733" width="600" height="127"/>
                                             </pickerView>
                                         </subviews>
@@ -343,13 +343,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apppppppp-14" translatesAutoresizingMaskIntoConstraints="NO" id="eRu-ER-YaE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Login sans text" translatesAutoresizingMaskIntoConstraints="NO" id="eRu-ER-YaE">
                                 <rect key="frame" x="0.0" y="43" width="606" height="567"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="yUq-a9-Nul">
                                 <rect key="frame" x="0.0" y="200" width="600" height="123"/>
                                 <subviews>
-                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmO-Gw-pim" userLabel="Google">
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmO-Gw-pim" userLabel="Google">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="InnercityRegular" family="Innercity" pointSize="30"/>
@@ -360,7 +360,7 @@
                                             <segue destination="r73-Mu-Icg" kind="show" id="EX9-l4-xzb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aR-uj-bDa" userLabel="Facebook">
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aR-uj-bDa" userLabel="Facebook">
                                         <rect key="frame" x="0.0" y="74" width="600" height="49"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="InnercityRegular" family="Innercity" pointSize="30"/>
@@ -378,11 +378,10 @@
                         <constraints>
                             <constraint firstItem="eRu-ER-YaE" firstAttribute="centerX" secondItem="j4X-Ae-bkB" secondAttribute="centerX" id="6Fm-Aj-Ns1"/>
                             <constraint firstItem="yUq-a9-Nul" firstAttribute="centerY" secondItem="eRu-ER-YaE" secondAttribute="centerY" id="6gO-mg-fjs"/>
-                            <constraint firstItem="eRu-ER-YaE" firstAttribute="top" secondItem="J01-2e-4ma" secondAttribute="bottom" id="HuY-cm-RBA"/>
+                            <constraint firstItem="eRu-ER-YaE" firstAttribute="centerY" secondItem="j4X-Ae-bkB" secondAttribute="centerY" id="JNY-fW-gVK"/>
                             <constraint firstItem="eRu-ER-YaE" firstAttribute="height" secondItem="j4X-Ae-bkB" secondAttribute="height" id="SnA-mX-fQ0"/>
                             <constraint firstItem="eRu-ER-YaE" firstAttribute="width" secondItem="j4X-Ae-bkB" secondAttribute="width" id="ZOK-SP-ane"/>
                             <constraint firstItem="yUq-a9-Nul" firstAttribute="centerX" secondItem="j4X-Ae-bkB" secondAttribute="centerX" id="Zfe-cc-Ucz"/>
-                            <constraint firstItem="9IK-Q5-cLs" firstAttribute="top" secondItem="eRu-ER-YaE" secondAttribute="bottom" constant="13" id="gOk-th-Lf0"/>
                             <constraint firstItem="yUq-a9-Nul" firstAttribute="width" secondItem="eRu-ER-YaE" secondAttribute="width" id="uz3-Oh-wS6"/>
                         </constraints>
                     </view>
@@ -412,7 +411,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="apppppppp-14" width="641" height="1038"/>
+        <image name="Login sans text" width="642" height="1038"/>
         <image name="camera" width="50" height="50"/>
         <image name="click-1" width="119" height="119"/>
         <image name="list" width="50" height="50"/>

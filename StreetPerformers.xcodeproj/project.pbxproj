@@ -275,7 +275,7 @@
 				TargetAttributes = {
 					168DA2341C66771A00BF983C = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = MY69L7Z7NM;
+						DevelopmentTeam = V282FSXR9Z;
 					};
 					168DA24A1C66771A00BF983C = {
 						CreatedOnToolsVersion = 7.2;
@@ -476,7 +476,7 @@
 				);
 				INFOPLIST_FILE = StreetPerformers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HAB.StreetPerformers;
+				PRODUCT_BUNDLE_IDENTIFIER = HAB.VybeCity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StreetPerformers-Bridging-Header.h";
@@ -497,7 +497,7 @@
 				);
 				INFOPLIST_FILE = StreetPerformers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HAB.StreetPerformers;
+				PRODUCT_BUNDLE_IDENTIFIER = HAB.VybeCity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StreetPerformers-Bridging-Header.h";

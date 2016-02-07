@@ -73,6 +73,10 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         picker.sourceType = .Camera
         presentViewController(picker, animated: true, completion: nil)
     }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
     @IBAction func donePressed(){
         if(!self.stars.hidden){
@@ -81,6 +85,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             scroller.selectRow(0, inComponent: 0, animated: false)
             self.scroller.hidden = false
             self.commentTextField.becomeFirstResponder()
+            
         }else{
             if(!uploading){
             self.uploading = true

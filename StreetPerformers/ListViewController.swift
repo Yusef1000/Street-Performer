@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+
 protocol LocationDelegate{
    func getLocation() -> PFGeoPoint?
 }
@@ -67,7 +68,6 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCellWithIdentifier("PerformanceCell", forIndexPath: indexPath) as! PerformanceListRow
-        //cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
         
         cell.userLoc = self
         cell.assignRow(performances![indexPath.row])
