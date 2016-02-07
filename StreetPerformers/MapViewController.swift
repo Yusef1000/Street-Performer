@@ -9,12 +9,31 @@
 import Foundation
 import MapKit
 
-class PinAnnotation: MKPointAnnotation{
-    var img: UIImage!
-    func assignImage(cat: String){
-        img = UIImage(named: cat.lowercaseString)
-    }
+class PinAnnotation : NSObject, MKAnnotation {
+    private var coord: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
     
+    var coordinate: CLLocationCoordinate2D {
+        get {
+            return coord
+        }
+    }
+    func getAysnc(obj: PFObject){
+        (obj["image"] as! PFFile).getDataInBackgroundWithBlock { (data, err) -> Void in
+            if let imgData = data{
+                dispatch_async(dispatch_get_main_queue()){
+                    self.img = UIImage(data: imgData)
+                }
+            }
+        }
+
+    }
+    var title: String? = ""
+    var subtitle: String? = ""
+    var img: UIImage?
+    
+    func setCoordinate(newCoordinate: CLLocationCoordinate2D) {
+        self.coord = newCoordinate
+    }
 }
 
 class MapViewController: UIViewController, MKMapViewDelegate {
@@ -33,7 +52,14 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 //return nil so map draws default view for it (eg. blue dot)...
                 return nil
             }
-            
+            if(annotation is PinAnnotation){
+                let pinAnnotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "myPin")
+                let img = UIImageView(image: (annotation as! PinAnnotation).img)
+                // :(
+                pinAnnotationView.leftCalloutAccessoryView = img
+                pinAnnotationView.canShowCallout = true
+
+            }
             let reuseId = "test"
             
             var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId)
@@ -91,7 +117,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                                 let long = loc.longitude
                                 let loc2 = CLLocationCoordinate2D(latitude: lat, longitude: long)
                         let newAnnot = PinAnnotation()
-                        
+                        newAnnot.getAysnc(perf)
                         newAnnot.title = perf["biography"] as? String
                         if(self.location != nil){
                             let loc = perf["location"] as! PFGeoPoint
@@ -99,8 +125,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                             let y = Double(round(1000*mi)/1000)
 
                         newAnnot.subtitle = "\(y) mi away"
-                        
-                        newAnnot.coordinate = loc2
+                        newAnnot.setCoordinate(loc2)
                         self.map.addAnnotation(newAnnot)
                         }
                 }
