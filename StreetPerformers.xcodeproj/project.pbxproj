@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		168DA2391C66771A00BF983C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DA2381C66771A00BF983C /* AppDelegate.swift */; };
-		168DA23B1C66771A00BF983C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DA23A1C66771A00BF983C /* FirstViewController.swift */; };
-		168DA23D1C66771A00BF983C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DA23C1C66771A00BF983C /* SecondViewController.swift */; };
 		168DA2401C66771A00BF983C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168DA23E1C66771A00BF983C /* Main.storyboard */; };
 		168DA2421C66771A00BF983C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 168DA2411C66771A00BF983C /* Assets.xcassets */; };
 		168DA2451C66771A00BF983C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168DA2431C66771A00BF983C /* LaunchScreen.storyboard */; };
@@ -28,6 +26,8 @@
 		16D48A311C66CF9A00D47ACE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D48A301C66CF9A00D47ACE /* SystemConfiguration.framework */; };
 		16D48A341C66D08A00D47ACE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D48A321C66D08A00D47ACE /* libsqlite3.dylib */; };
 		16D48A351C66D08A00D47ACE /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D48A331C66D08A00D47ACE /* libz.1.dylib */; };
+		16D48A371C66D93B00D47ACE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D48A361C66D93B00D47ACE /* ListViewController.swift */; };
+		16D48A391C66DA3B00D47ACE /* PerformanceListRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D48A381C66DA3B00D47ACE /* PerformanceListRow.xib */; };
 		16FA8F991C66BFA800AC454B /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA8F981C66BFA800AC454B /* Upload.swift */; };
 		16FA8FA31C66C45800AC454B /* SearchButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16FA8FA21C66C45800AC454B /* SearchButtonCell.xib */; };
 		16FA8FA71C66C74100AC454B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA8FA61C66C74100AC454B /* Category.swift */; };
@@ -47,8 +47,6 @@
 /* Begin PBXFileReference section */
 		168DA2351C66771A00BF983C /* StreetPerformers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetPerformers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		168DA2381C66771A00BF983C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../Street-Performer/StreetPerformers/AppDelegate.swift"; sourceTree = "<group>"; };
-		168DA23A1C66771A00BF983C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = "../../Street-Performer/StreetPerformers/FirstViewController.swift"; sourceTree = "<group>"; };
-		168DA23C1C66771A00BF983C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "../../Street-Performer/StreetPerformers/SecondViewController.swift"; sourceTree = "<group>"; };
 		168DA23F1C66771A00BF983C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		168DA2411C66771A00BF983C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../Street-Performer/StreetPerformers/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		168DA2441C66771A00BF983C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +68,8 @@
 		16D48A301C66CF9A00D47ACE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		16D48A321C66D08A00D47ACE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		16D48A331C66D08A00D47ACE /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		16D48A361C66D93B00D47ACE /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		16D48A381C66DA3B00D47ACE /* PerformanceListRow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PerformanceListRow.xib; sourceTree = "<group>"; };
 		16FA8F981C66BFA800AC454B /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
 		16FA8FA21C66C45800AC454B /* SearchButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchButtonCell.xib; sourceTree = "<group>"; };
 		16FA8FA61C66C74100AC454B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -178,6 +178,7 @@
 				168DA23E1C66771A00BF983C /* Main.storyboard */,
 				168DA2411C66771A00BF983C /* Assets.xcassets */,
 				16FA8FA21C66C45800AC454B /* SearchButtonCell.xib */,
+				16D48A381C66DA3B00D47ACE /* PerformanceListRow.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -185,9 +186,8 @@
 		168DA25E1C667DA700BF983C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				168DA23A1C66771A00BF983C /* FirstViewController.swift */,
-				168DA23C1C66771A00BF983C /* SecondViewController.swift */,
 				B5ADCAB31C66A64700D8D123 /* SearchViewController.swift */,
+				16D48A361C66D93B00D47ACE /* ListViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -276,6 +276,7 @@
 				168DA2451C66771A00BF983C /* LaunchScreen.storyboard in Resources */,
 				168DA2421C66771A00BF983C /* Assets.xcassets in Resources */,
 				168DA2401C66771A00BF983C /* Main.storyboard in Resources */,
+				16D48A391C66DA3B00D47ACE /* PerformanceListRow.xib in Resources */,
 				16FA8FA31C66C45800AC454B /* SearchButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,11 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				168DA23D1C66771A00BF983C /* SecondViewController.swift in Sources */,
 				16FA8F991C66BFA800AC454B /* Upload.swift in Sources */,
 				168DA2391C66771A00BF983C /* AppDelegate.swift in Sources */,
 				B5ADCAB41C66A64700D8D123 /* SearchViewController.swift in Sources */,
-				168DA23B1C66771A00BF983C /* FirstViewController.swift in Sources */,
+				16D48A371C66D93B00D47ACE /* ListViewController.swift in Sources */,
 				16FA8FA71C66C74100AC454B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sub-4h-WAw">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sub-4h-WAw">
                                 <rect key="frame" x="0.0" y="28" width="600" height="67"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Current Performances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhd-zb-J1C">
-                                        <rect key="frame" x="151" y="23" width="170" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Performances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhd-zb-J1C">
+                                        <rect key="frame" x="215" y="23" width="170" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -29,16 +29,25 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="vhd-zb-J1C" firstAttribute="centerX" secondItem="Sub-4h-WAw" secondAttribute="centerX" id="iiz-hc-e0B"/>
-                                    <constraint firstItem="vhd-zb-J1C" firstAttribute="centerY" secondItem="Sub-4h-WAw" secondAttribute="centerY" id="loW-6o-p5N"/>
+                                    <constraint firstAttribute="height" constant="67" id="7to-Sm-11n"/>
+                                    <constraint firstItem="vhd-zb-J1C" firstAttribute="centerX" secondItem="Sub-4h-WAw" secondAttribute="centerX" id="SJO-8a-DfL"/>
+                                    <constraint firstItem="vhd-zb-J1C" firstAttribute="centerY" secondItem="Sub-4h-WAw" secondAttribute="centerY" id="hV0-FB-ecK"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jdM-Ph-wca">
+                                <rect key="frame" x="0.0" y="98" width="600" height="453"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Sub-4h-WAw" firstAttribute="top" secondItem="kaO-qS-mtm" secondAttribute="bottom" constant="8" id="JNS-HA-1Yo"/>
-                            <constraint firstItem="Sub-4h-WAw" firstAttribute="centerX" secondItem="EyV-7q-Bee" secondAttribute="centerX" id="do7-iC-ALg"/>
-                            <constraint firstItem="Sub-4h-WAw" firstAttribute="width" secondItem="EyV-7q-Bee" secondAttribute="width" id="iO2-Ow-fBJ"/>
+                            <constraint firstItem="jdM-Ph-wca" firstAttribute="width" secondItem="EyV-7q-Bee" secondAttribute="width" id="8Mo-ow-hyT"/>
+                            <constraint firstItem="LRj-rw-LpP" firstAttribute="top" secondItem="jdM-Ph-wca" secondAttribute="bottom" id="Giq-Vt-sb4"/>
+                            <constraint firstItem="Sub-4h-WAw" firstAttribute="centerX" secondItem="EyV-7q-Bee" secondAttribute="centerX" id="YUy-im-1tx"/>
+                            <constraint firstItem="Sub-4h-WAw" firstAttribute="width" secondItem="EyV-7q-Bee" secondAttribute="width" id="hzV-b2-u8p"/>
+                            <constraint firstItem="jdM-Ph-wca" firstAttribute="top" secondItem="Sub-4h-WAw" secondAttribute="bottom" constant="3" id="j5Q-rE-xbx"/>
+                            <constraint firstItem="jdM-Ph-wca" firstAttribute="centerX" secondItem="EyV-7q-Bee" secondAttribute="centerX" id="rqL-no-eCX"/>
+                            <constraint firstItem="Sub-4h-WAw" firstAttribute="top" secondItem="kaO-qS-mtm" secondAttribute="bottom" constant="8" id="tJn-a7-DBW"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="list" id="lsa-df-GxB" userLabel="Feed"/>
