@@ -77,7 +77,7 @@
                             <constraint firstItem="WI4-bY-rXL" firstAttribute="centerX" secondItem="W8B-P6-cBj" secondAttribute="centerX" id="6RO-OJ-mDx"/>
                             <constraint firstItem="WI4-bY-rXL" firstAttribute="width" secondItem="W8B-P6-cBj" secondAttribute="width" id="7LF-2N-HCz"/>
                             <constraint firstAttribute="height" secondItem="WI4-bY-rXL" secondAttribute="height" id="Dp2-Sz-ZjK"/>
-                            <constraint firstItem="WI4-bY-rXL" firstAttribute="top" secondItem="rgn-Aj-hVf" secondAttribute="bottom" constant="47" id="M0h-RM-qQb"/>
+                            <constraint firstItem="WI4-bY-rXL" firstAttribute="centerY" secondItem="W8B-P6-cBj" secondAttribute="centerY" id="gs8-CG-JcG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="map" id="y9V-pM-GHL"/>
