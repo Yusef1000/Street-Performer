@@ -47,13 +47,17 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet var table: UITableView!
     var performances: [PFObject]?
     var location: PFGeoPoint?
+    var cat: String?
+    @IBOutlet var yellowView: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
         loadPerformances()
         loadLocation()
-        
+        if(cat != nil){
+            yellowView.text = cat
+        }
         table.registerNib(UINib(nibName: "PerformanceListRow", bundle: nil), forCellReuseIdentifier: "PerformanceCell")
     }
     override func viewDidAppear(animated: Bool) {
@@ -88,6 +92,9 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         var query = PFQuery(className:"Performance")
         query.orderByDescending("createdAt")
         query.limit = 50
+            if(self.cat != nil){
+                query.whereKey("Category", equalTo: self.cat!)
+            }
         query.findObjectsInBackgroundWithBlock { (objects, err) -> Void in
             if let perfs = objects{
                 self.performances = [PFObject]()

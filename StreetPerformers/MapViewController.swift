@@ -27,27 +27,29 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         loadLocation()
     }
     
-//        func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-//            if (annotation is MKUserLocation) {
-//                return nil
-//            }
-//            if (annotation.isKindOfClass(PinAnnotation)) {
-//                let customAnnotation = annotation as? PinAnnotation
-//                mapView.translatesAutoresizingMaskIntoConstraints = false
-//                var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier("PinAnnotation") as MKAnnotationView!
-//                
-//                if (annotationView == nil) {
-//                    annotationView = customAnnotation?.annotationView()
-//                } else {
-//                    annotationView.annotation = annotation;
-//                }
-//                
-//                //self.addBounceAnnotationView(annotationView)
-//                return annotationView
-//            } else {
-//                return nil
-//            }
-//        }
+        func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+            if (annotation is MKUserLocation) {
+                //if annotation is not an MKPointAnnotation (eg. MKUserLocation),
+                //return nil so map draws default view for it (eg. blue dot)...
+                return nil
+            }
+            
+            let reuseId = "test"
+            
+            var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId)
+            if anView == nil {
+                anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+                anView!.image = UIImage(named:"dance")
+                anView!.canShowCallout = true
+            }
+            else {
+                //we are re-using a view, update its annotation reference...
+                anView!.annotation = annotation
+            }
+            
+            return anView
+
+        }
 
     
 

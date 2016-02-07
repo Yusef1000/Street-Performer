@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate , UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet var cameraButton: UIButton!
     @IBOutlet var retakeButton: UIButton!
     @IBOutlet var shareButton: UIButton!
@@ -18,8 +18,11 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet var commentTextField: UITextField!
     @IBOutlet var continueButton: UIButton!
     let picker = UIImagePickerController()
+    @IBOutlet var scroller: UIPickerView!
     var displayBool = false
     var uploading = false
+    let pickerData = ["Dance", "Vocals", "Instruments", "Make-Up", "Stunts"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
@@ -51,7 +54,20 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         displayBool = true
         dismissViewControllerAnimated(true, completion: nil)
     }
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
     
+    // The number of rows of data
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    // The data to return for the row and component (column) that's being passed in
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+
     @IBAction func loadImageButtonTapped(sender: UIButton) {
         picker.allowsEditing = false
         picker.sourceType = .Camera
@@ -62,11 +78,14 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         if(!self.stars.hidden){
             self.stars.hidden = true
             self.commentTextField.hidden = false
+            scroller.selectRow(0, inComponent: 0, animated: false)
+            self.scroller.hidden = false
             self.commentTextField.becomeFirstResponder()
         }else{
             if(!uploading){
             self.uploading = true
-            let upload = Upload(desc: self.commentTextField.text!, img: self.imageV.image, rating: self.stars.starValue, category: "Dancers")
+            let upload = Upload(desc: self.commentTextField.text!, img: self.imageV.image, rating: self.stars.starValue,
+                category: self.pickerView(scroller, titleForRow: scroller.selectedRowInComponent(0), forComponent: 0)!)
             upload.uploadParseBackground({ () -> () in
                 dispatch_async(dispatch_get_main_queue()){
                     self.imageV.image = nil
@@ -74,6 +93,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                     self.commentTextField.hidden = true
                     self.cameraButton.hidden = false
                     self.continueButton.hidden = true
+                    self.scroller.hidden = true
                     let alertView = UIAlertView(title: "Feeling your Vibe!", message: "", delegate: self, cancelButtonTitle: "Cool!")
                     alertView.alertViewStyle = .Default
                     alertView.show()

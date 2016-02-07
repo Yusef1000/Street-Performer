@@ -34,6 +34,7 @@ class Upload{
         let imageFile = PFFile(name:"image.jpeg", data:imageData!)
         uploadObject["image"] = imageFile
         }
+        uploadObject["Category"] = self.category
         uploadObject["rating"] = self.rating
         PFGeoPoint.geoPointForCurrentLocationInBackground {
             (geoPoint: PFGeoPoint?, error: NSError?) -> Void in

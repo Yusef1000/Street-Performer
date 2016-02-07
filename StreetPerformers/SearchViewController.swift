@@ -25,7 +25,12 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         collectionView.delegate = self
         collectionView.registerNib(UINib(nibName: "SearchButtonCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCell")
     }
-
+    override func viewDidAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
+    override func viewDidDisappear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = false
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -42,6 +47,11 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
             return cell
     }
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let nextViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ListViewController") as! ListViewController
+        nextViewController.hidesBottomBarWhenPushed = true
+        nextViewController.cat = (collectionView.cellForItemAtIndexPath(indexPath) as! SearchButtonCell).cate.description
+        self.navigationController?.pushViewController(nextViewController, animated: false)
+
     }
     
     func collectionView(collectionView: UICollectionView,
