@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QBS-Em-jtL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QBS-Em-jtL">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="InnercityRegular.otf">
+            <string>InnercityRegular</string>
+            <string>InnercityRegular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--List-->
         <scene sceneID="C42-rb-E0x">
@@ -29,7 +35,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="7to-Sm-11n"/>
                                     <constraint firstItem="vhd-zb-J1C" firstAttribute="centerX" secondItem="Sub-4h-WAw" secondAttribute="centerX" id="SJO-8a-DfL"/>
@@ -52,7 +58,7 @@
                             <constraint firstItem="Sub-4h-WAw" firstAttribute="top" secondItem="kaO-qS-mtm" secondAttribute="bottom" constant="8" symbolic="YES" id="tJn-a7-DBW"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="list" id="lsa-df-GxB" userLabel="Feed"/>
+                    <tabBarItem key="tabBarItem" title="Buzz" image="list" id="lsa-df-GxB" userLabel="Feed"/>
                     <connections>
                         <outlet property="table" destination="jdM-Ph-wca" id="ZlR-uU-ch8"/>
                     </connections>
@@ -85,7 +91,7 @@
                             <constraint firstItem="WI4-bY-rXL" firstAttribute="centerY" secondItem="W8B-P6-cBj" secondAttribute="centerY" id="gs8-CG-JcG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="map" id="y9V-pM-GHL"/>
+                    <tabBarItem key="tabBarItem" title="Locate" image="map" id="y9V-pM-GHL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXa-ah-Glc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,9 +106,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Re0-gc-MfF" kind="relationship" relationship="viewControllers" id="IMM-qm-uxk"/>
-                        <segue destination="4nY-4Y-hii" kind="relationship" relationship="viewControllers" id="bRq-7h-N9L"/>
                         <segue destination="XvO-BX-xBg" kind="relationship" relationship="viewControllers" id="WFG-A8-Vt0"/>
+                        <segue destination="4nY-4Y-hii" kind="relationship" relationship="viewControllers" id="bRq-7h-N9L"/>
+                        <segue destination="Re0-gc-MfF" kind="relationship" relationship="viewControllers" id="IMM-qm-uxk"/>
                         <segue destination="NSw-Eq-7jL" kind="relationship" relationship="viewControllers" id="Hqm-QP-WhL"/>
                     </connections>
                 </tabBarController>
@@ -132,7 +138,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" secondItem="d11-V5-cNE" secondAttribute="height" constant="30" id="Fpr-5u-dxv"/>
                                     <constraint firstItem="d11-V5-cNE" firstAttribute="centerX" secondItem="6w0-es-89k" secondAttribute="centerX" id="FtZ-a9-xr2"/>
@@ -172,7 +178,7 @@
                             <constraint firstItem="6w0-es-89k" firstAttribute="width" secondItem="U5U-LH-9CA" secondAttribute="width" id="s0C-db-lvv"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="search" id="dM4-wF-KVf"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="search" id="dM4-wF-KVf"/>
                     <connections>
                         <outlet property="collectionView" destination="ASz-Xe-4xh" id="hdA-3V-fc9"/>
                     </connections>
@@ -268,7 +274,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="xHV-Pt-4Tm" firstAttribute="centerX" secondItem="diL-7Q-1P7" secondAttribute="centerX" id="O79-Np-zyT"/>
                                     <constraint firstAttribute="height" constant="50" id="Tpq-oi-UK7"/>
@@ -289,7 +295,7 @@
                             <constraint firstItem="diL-7Q-1P7" firstAttribute="centerX" secondItem="WKv-kZ-cCF" secondAttribute="centerX" id="wda-vh-Bo0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="camera" id="Nm5-QV-5wO"/>
+                    <tabBarItem key="tabBarItem" title="Share" image="camera" id="Nm5-QV-5wO"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
@@ -316,25 +322,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="eRu-ER-YaE">
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apppppppp-14" translatesAutoresizingMaskIntoConstraints="NO" id="eRu-ER-YaE">
                                 <rect key="frame" x="0.0" y="43" width="606" height="567"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yUq-a9-Nul">
-                                <rect key="frame" x="0.0" y="200" width="600" height="60"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="yUq-a9-Nul">
+                                <rect key="frame" x="0.0" y="200" width="600" height="123"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmO-Gw-pim" userLabel="Google">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmO-Gw-pim" userLabel="Google">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="InnercityRegular" family="Innercity" pointSize="30"/>
                                         <state key="normal" title="Google">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="r73-Mu-Icg" kind="show" id="EX9-l4-xzb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aR-uj-bDa" userLabel="Facebook">
-                                        <rect key="frame" x="0.0" y="30" width="600" height="30"/>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aR-uj-bDa" userLabel="Facebook">
+                                        <rect key="frame" x="0.0" y="74" width="600" height="49"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="InnercityRegular" family="Innercity" pointSize="30"/>
                                         <state key="normal" title="Facebook">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="facebookSignUp" destination="QBS-Em-jtL" eventType="touchUpInside" id="V5u-gm-3OQ"/>
@@ -362,10 +372,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="apppppppp-14" width="641" height="1038"/>
         <image name="camera" width="50" height="50"/>
         <image name="click-1" width="119" height="119"/>
         <image name="list" width="50" height="50"/>
-        <image name="login" width="641" height="1137"/>
         <image name="map" width="50" height="50"/>
         <image name="search" width="50" height="50"/>
     </resources>
