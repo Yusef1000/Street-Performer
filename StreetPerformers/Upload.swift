@@ -14,15 +14,16 @@ class Upload{
     
     
     let className =  "Performance"
-    
+    var category: String
     var bio: String
     var photo: UIImage?
     var rating: Int
     
-    init(desc: String, img: UIImage?, rating: Int){
+    init(desc: String, img: UIImage?, rating: Int, category: String){
         self.bio = desc
         self.rating = rating
-        photo = img
+        self.photo = img
+        self.category = category
     }
     
     func uploadParseBackground(onSuccess: () -> (), onFailure: () -> ()){
