@@ -9,7 +9,7 @@
 import Foundation
 import MapKit
 
-class PinAnnotation: MKAnnotationView{
+class PinAnnotation: MKPointAnnotation{
     var img: UIImage!
     func assignImage(cat: String){
         img = UIImage(named: cat.lowercaseString)
@@ -52,7 +52,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
 
     
-
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+    }
     
     
     var location: PFGeoPoint?
@@ -89,7 +90,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                                 let lat = loc.latitude
                                 let long = loc.longitude
                                 let loc2 = CLLocationCoordinate2D(latitude: lat, longitude: long)
-                        let newAnnot = MKPointAnnotation()
+                        let newAnnot = PinAnnotation()
+                        
                         newAnnot.title = perf["biography"] as? String
                         if(self.location != nil){
                             let loc = perf["location"] as! PFGeoPoint
@@ -97,6 +99,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                             let y = Double(round(1000*mi)/1000)
 
                         newAnnot.subtitle = "\(y) mi away"
+                        
                         newAnnot.coordinate = loc2
                         self.map.addAnnotation(newAnnot)
                         }
@@ -106,31 +109,31 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 
     }
     }
-    func brownUni(){
-        PFGeoPoint.geoPointForCurrentLocationInBackground {
-            (geoPoint: PFGeoPoint?, error: NSError?) -> Void in
-            if error == nil {
-                if let myLocation = geoPoint{
-                    dispatch_async(dispatch_get_main_queue()){
-                    let lat = myLocation.latitude
-                    let long = myLocation.longitude
-                    let loc = CLLocationCoordinate2D(latitude: lat, longitude: long)
-                    let latDelta:CLLocationDegrees = 0.02
-                    let longDelta:CLLocationDegrees = 0.02
-                    let brownUniSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
-                    let brownUniRegion = MKCoordinateRegion(center: loc, span: brownUniSpan)
-                    self.map.setRegion(brownUniRegion, animated: true)
-                    let brownUniAnnotation = MKPointAnnotation()
-                    brownUniAnnotation.title = "Mike Sullivan"
-                    brownUniAnnotation.subtitle = "Professional HipHop Dancer"
-                    brownUniAnnotation.coordinate = loc
-                    //brownUniAnnotation.provideImageData(<#T##data: UnsafeMutablePointer<Void>##UnsafeMutablePointer<Void>#>, bytesPerRow: <#T##Int#>, origin: <#T##Int#>, <#T##y: Int##Int#>, size: <#T##Int#>, <#T##height: Int##Int#>, userInfo: <#T##AnyObject?#>)
-                    self.map.addAnnotation(brownUniAnnotation)
-                    }
-                }
-            }else{
-                
-            }
-        }
-}
+//    func brownUni(){
+//        PFGeoPoint.geoPointForCurrentLocationInBackground {
+//            (geoPoint: PFGeoPoint?, error: NSError?) -> Void in
+//            if error == nil {
+//                if let myLocation = geoPoint{
+//                    dispatch_async(dispatch_get_main_queue()){
+//                    let lat = myLocation.latitude
+//                    let long = myLocation.longitude
+//                    let loc = CLLocationCoordinate2D(latitude: lat, longitude: long)
+//                    let latDelta:CLLocationDegrees = 0.02
+//                    let longDelta:CLLocationDegrees = 0.02
+//                    let brownUniSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
+//                    let brownUniRegion = MKCoordinateRegion(center: loc, span: brownUniSpan)
+//                    self.map.setRegion(brownUniRegion, animated: true)
+//                    let brownUniAnnotation = MKPointAnnotation()
+//                    brownUniAnnotation.title = "Mike Sullivan"
+//                    brownUniAnnotation.subtitle = "Professional HipHop Dancer"
+//                    brownUniAnnotation.coordinate = loc
+//                    //brownUniAnnotation.provideImageData(<#T##data: UnsafeMutablePointer<Void>##UnsafeMutablePointer<Void>#>, bytesPerRow: <#T##Int#>, origin: <#T##Int#>, <#T##y: Int##Int#>, size: <#T##Int#>, <#T##height: Int##Int#>, userInfo: <#T##AnyObject?#>)
+//                    self.map.addAnnotation(brownUniAnnotation)
+//                    }
+//                }
+//            }else{
+//                
+//            }
+//        }
+//}
 }
