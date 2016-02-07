@@ -49,7 +49,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     func collectionView(collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize{
-            let size = (collectionView.frame.width / 2) - 6
+            let size = (collectionView.frame.width / 2) - 3
             return CGSize(width: size, height: size * 0.66)
     }
     
