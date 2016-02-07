@@ -11,7 +11,7 @@ import MapKit
 
 class MapViewController: UIViewController, MKMapViewDelegate {
     
-    @IBOutlet var Map: MKMapView!
+    @IBOutlet var map: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,36 +32,18 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                     let longDelta:CLLocationDegrees = 0.02
                     let brownUniSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
                     let brownUniRegion = MKCoordinateRegion(center: loc, span: brownUniSpan)
-                    self.Map.setRegion(brownUniRegion, animated: true)
+                    self.map.setRegion(brownUniRegion, animated: true)
                     let brownUniAnnotation = MKPointAnnotation()
                     brownUniAnnotation.title = "Mike Sullivan"
                     brownUniAnnotation.subtitle = "Professional HipHop Dancer"
                     brownUniAnnotation.coordinate = loc
                     //brownUniAnnotation.provideImageData(<#T##data: UnsafeMutablePointer<Void>##UnsafeMutablePointer<Void>#>, bytesPerRow: <#T##Int#>, origin: <#T##Int#>, <#T##y: Int##Int#>, size: <#T##Int#>, <#T##height: Int##Int#>, userInfo: <#T##AnyObject?#>)
-                    self.Map.addAnnotation(brownUniAnnotation)
+                    self.map.addAnnotation(brownUniAnnotation)
                     }
                 }
-                
             }else{
                 
             }
         }
-//        //Coordinates
-//        let brownUniLat: CLLocationDegrees = 30.1033
-//        let brownUniLong: CLLocationDegrees = -95.6337
-//        let brownUniCoordinate = CLLocationCoordinate2D(latitude: brownUniLat, longitude: brownUniLong)
-//        //Span
-//        let latDelta:CLLocationDegrees = 0.02
-//        let longDelta:CLLocationDegrees = 0.02
-//        let brownUniSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
-//        let brownUniRegion = MKCoordinateRegion(center: brownUniCoordinate, span: brownUniSpan)
-//        //PIN AND DETAILS
-//        Map.setRegion(brownUniRegion, animated: true)
-//        let brownUniAnnotation = MKPointAnnotation()
-//        brownUniAnnotation.title = "Mike Sullivan"
-//        brownUniAnnotation.subtitle = "Professional HipHop Dancer"
-//        brownUniAnnotation.coordinate = brownUniCoordinate
-//        //brownUniAnnotation.provideImageData(<#T##data: UnsafeMutablePointer<Void>##UnsafeMutablePointer<Void>#>, bytesPerRow: <#T##Int#>, origin: <#T##Int#>, <#T##y: Int##Int#>, size: <#T##Int#>, <#T##height: Int##Int#>, userInfo: <#T##AnyObject?#>)
-//        Map.addAnnotation(brownUniAnnotation)
 }
 }

@@ -17,6 +17,10 @@
 		168DA2421C66771A00BF983C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 168DA2411C66771A00BF983C /* Assets.xcassets */; };
 		168DA2451C66771A00BF983C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168DA2431C66771A00BF983C /* LaunchScreen.storyboard */; };
 		168DA2501C66771A00BF983C /* StreetPerformersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DA24F1C66771A00BF983C /* StreetPerformersUITests.swift */; };
+		169CBB701C6726720064A262 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 169CBB691C6726720064A262 /* TPKeyboardAvoidingCollectionView.m */; };
+		169CBB711C6726720064A262 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 169CBB6B1C6726720064A262 /* TPKeyboardAvoidingScrollView.m */; };
+		169CBB721C6726720064A262 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 169CBB6D1C6726720064A262 /* TPKeyboardAvoidingTableView.m */; };
+		169CBB731C6726720064A262 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 169CBB6F1C6726720064A262 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		16D48A1C1C66CEB000D47ACE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D48A1A1C66CEB000D47ACE /* Bolts.framework */; };
 		16D48A1D1C66CEB000D47ACE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D48A1B1C66CEB000D47ACE /* Parse.framework */; };
 		16D48A1F1C66CF3200D47ACE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D48A1E1C66CF3200D47ACE /* AudioToolbox.framework */; };
@@ -68,6 +72,14 @@
 		168DA24B1C66771A00BF983C /* StreetPerformersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreetPerformersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		168DA24F1C66771A00BF983C /* StreetPerformersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetPerformersUITests.swift; sourceTree = "<group>"; };
 		168DA2511C66771A00BF983C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169CBB681C6726720064A262 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		169CBB691C6726720064A262 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		169CBB6A1C6726720064A262 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		169CBB6B1C6726720064A262 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		169CBB6C1C6726720064A262 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		169CBB6D1C6726720064A262 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		169CBB6E1C6726720064A262 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		169CBB6F1C6726720064A262 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		16D48A1A1C66CEB000D47ACE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		16D48A1B1C66CEB000D47ACE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		16D48A1E1C66CF3200D47ACE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -134,6 +146,7 @@
 			children = (
 				16D48A321C66D08A00D47ACE /* libsqlite3.dylib */,
 				16D48A331C66D08A00D47ACE /* libz.1.dylib */,
+				169CBB671C6726720064A262 /* TPKeyboardAvoiding */,
 				160832A71C66F79B00818960 /* ParseFacebookUtilsV4.framework */,
 				160832A51C66F6B500818960 /* ParseFacebookUtils.framework */,
 				160832A31C66F45F00818960 /* FBSDKCoreKit.framework */,
@@ -222,6 +235,21 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		169CBB671C6726720064A262 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				169CBB681C6726720064A262 /* TPKeyboardAvoidingCollectionView.h */,
+				169CBB691C6726720064A262 /* TPKeyboardAvoidingCollectionView.m */,
+				169CBB6A1C6726720064A262 /* TPKeyboardAvoidingScrollView.h */,
+				169CBB6B1C6726720064A262 /* TPKeyboardAvoidingScrollView.m */,
+				169CBB6C1C6726720064A262 /* TPKeyboardAvoidingTableView.h */,
+				169CBB6D1C6726720064A262 /* TPKeyboardAvoidingTableView.m */,
+				169CBB6E1C6726720064A262 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				169CBB6F1C6726720064A262 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,6 +300,7 @@
 				TargetAttributes = {
 					168DA2341C66771A00BF983C = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MY69L7Z7NM;
 					};
 					168DA24A1C66771A00BF983C = {
 						CreatedOnToolsVersion = 7.2;
@@ -325,13 +354,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169CBB701C6726720064A262 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				16FA8F991C66BFA800AC454B /* Upload.swift in Sources */,
 				160832B01C66FC5100818960 /* SignUpViewController.swift in Sources */,
+				169CBB731C6726720064A262 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				168DA2391C66771A00BF983C /* AppDelegate.swift in Sources */,
 				B5ADCAB41C66A64700D8D123 /* SearchViewController.swift in Sources */,
+				169CBB711C6726720064A262 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				16D48A371C66D93B00D47ACE /* ListViewController.swift in Sources */,
 				B5DBC0491C66EFB300BC72B4 /* CameraViewController.swift in Sources */,
 				16D48A3B1C66DEC900D47ACE /* StarsView.swift in Sources */,
+				169CBB721C6726720064A262 /* TPKeyboardAvoidingTableView.m in Sources */,
 				16FA8FA71C66C74100AC454B /* Category.swift in Sources */,
 				802E90E51C66F0950091CCC4 /* MapViewController.swift in Sources */,
 			);
@@ -463,6 +496,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"($SRCROOT)/**",
 					"$(PROJECT_DIR)",
@@ -471,6 +506,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HAB.StreetPerformers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StreetPerformers-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -481,6 +517,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"($SRCROOT)/**",
 					"$(PROJECT_DIR)",
@@ -489,6 +527,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HAB.StreetPerformers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StreetPerformers-Bridging-Header.h";
 			};
 			name = Release;

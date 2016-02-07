@@ -30,8 +30,8 @@ class Upload{
         let uploadObject = PFObject(className: className)
         uploadObject["biography"] = bio
         if let img = photo{
-        let imageData = UIImagePNGRepresentation(img)
-        let imageFile = PFFile(name:"image.png", data:imageData!)
+        let imageData = UIImageJPEGRepresentation(img, 0.8)
+        let imageFile = PFFile(name:"image.jpeg", data:imageData!)
         uploadObject["image"] = imageFile
         }
         PFGeoPoint.geoPointForCurrentLocationInBackground {
