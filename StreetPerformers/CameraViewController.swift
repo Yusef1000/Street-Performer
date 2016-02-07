@@ -78,6 +78,11 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         return false
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        commentTextField.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
+    
     @IBAction func donePressed(){
         if(!self.stars.hidden){
             self.stars.hidden = true
