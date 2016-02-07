@@ -28,6 +28,7 @@
 		16D48A351C66D08A00D47ACE /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D48A331C66D08A00D47ACE /* libz.1.dylib */; };
 		16D48A371C66D93B00D47ACE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D48A361C66D93B00D47ACE /* ListViewController.swift */; };
 		16D48A391C66DA3B00D47ACE /* PerformanceListRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D48A381C66DA3B00D47ACE /* PerformanceListRow.xib */; };
+		16D48A3B1C66DEC900D47ACE /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D48A3A1C66DEC900D47ACE /* StarsView.swift */; };
 		16FA8F991C66BFA800AC454B /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA8F981C66BFA800AC454B /* Upload.swift */; };
 		16FA8FA31C66C45800AC454B /* SearchButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16FA8FA21C66C45800AC454B /* SearchButtonCell.xib */; };
 		16FA8FA71C66C74100AC454B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA8FA61C66C74100AC454B /* Category.swift */; };
@@ -70,6 +71,7 @@
 		16D48A331C66D08A00D47ACE /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		16D48A361C66D93B00D47ACE /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		16D48A381C66DA3B00D47ACE /* PerformanceListRow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PerformanceListRow.xib; sourceTree = "<group>"; };
+		16D48A3A1C66DEC900D47ACE /* StarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
 		16FA8F981C66BFA800AC454B /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
 		16FA8FA21C66C45800AC454B /* SearchButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchButtonCell.xib; sourceTree = "<group>"; };
 		16FA8FA61C66C74100AC454B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				168DA2411C66771A00BF983C /* Assets.xcassets */,
 				16FA8FA21C66C45800AC454B /* SearchButtonCell.xib */,
 				16D48A381C66DA3B00D47ACE /* PerformanceListRow.xib */,
+				16D48A3A1C66DEC900D47ACE /* StarsView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				168DA2391C66771A00BF983C /* AppDelegate.swift in Sources */,
 				B5ADCAB41C66A64700D8D123 /* SearchViewController.swift in Sources */,
 				16D48A371C66D93B00D47ACE /* ListViewController.swift in Sources */,
+				16D48A3B1C66DEC900D47ACE /* StarsView.swift in Sources */,
 				16FA8FA71C66C74100AC454B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
