@@ -14,16 +14,25 @@ class PerformanceListRow: UITableViewCell{
     @IBOutlet var distanceLabel: UILabel!
     @IBOutlet var bio: UILabel!
     var perf: Upload!
-    func assignRow(perf: Upload){
-        imageDisplay.image = perf.photo
-        bio.text = perf.bio
+    func assignRow(perf: PFObject){
+        //imageDisplay.image = //
+        print(perf)
+        bio.text = perf["biography"] as? String
+        (perf["image"] as! PFFile).getDataInBackgroundWithBlock { (data, err) -> Void in
+            if let imgData = data{
+                dispatch_async(dispatch_get_main_queue()){
+                self.imageDisplay.image = UIImage(data: imgData)
+                }
+            }
+        }
+        
         distanceLabel.text = "Right around the corner!"
     }
 }
 
 class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     @IBOutlet var table: UITableView!
-    var performances: [Upload]?
+    var performances: [PFObject]?
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
@@ -43,6 +52,19 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return 0
     }
     func loadPerformances(){
-        
+        var query = PFQuery(className:"Performance")
+        query.orderByDescending("createdAt")
+        query.limit = 50
+        query.findObjectsInBackgroundWithBlock { (objects, err) -> Void in
+            if let perfs = objects{
+                self.performances = [PFObject]()
+                for perf in perfs{
+                    self.performances?.append(perf)
+                }
+                dispatch_async(dispatch_get_main_queue()){
+                    self.table.reloadData()
+                }
+            }
+        }
     }
 }

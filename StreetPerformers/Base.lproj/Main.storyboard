@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9mY-ui-qgz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QBS-Em-jtL">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -10,7 +10,7 @@
         <!--List-->
         <scene sceneID="C42-rb-E0x">
             <objects>
-                <viewController id="XvO-BX-xBg" userLabel="List" sceneMemberID="viewController">
+                <viewController id="XvO-BX-xBg" userLabel="List" customClass="ListViewController" customModule="StreetPerformers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kaO-qS-mtm"/>
                         <viewControllerLayoutGuide type="bottom" id="LRj-rw-LpP"/>
@@ -53,6 +53,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="list" id="lsa-df-GxB" userLabel="Feed"/>
+                    <connections>
+                        <outlet property="table" destination="jdM-Ph-wca" id="ZlR-uU-ch8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ses-RR-4NL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,7 +190,7 @@
                         <viewControllerLayoutGuide type="bottom" id="noQ-Ku-7aj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WKv-kZ-cCF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="951"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bck-q3-ap4" customClass="TPKeyboardAvoidingScrollView">
@@ -358,10 +361,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="camera" width="25" height="25"/>
+        <image name="camera" width="50" height="50"/>
         <image name="click-1" width="119" height="119"/>
-        <image name="list" width="25" height="25"/>
-        <image name="map" width="25" height="25"/>
-        <image name="search" width="25" height="25"/>
+        <image name="list" width="50" height="50"/>
+        <image name="login" width="641" height="1137"/>
+        <image name="map" width="50" height="50"/>
+        <image name="search" width="50" height="50"/>
     </resources>
 </document>

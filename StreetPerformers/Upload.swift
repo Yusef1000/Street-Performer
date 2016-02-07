@@ -18,7 +18,7 @@ class Upload{
     var bio: String
     var photo: UIImage?
     var rating: Int
-    
+    var location: CLLocation?
     init(desc: String, img: UIImage?, rating: Int, category: String){
         self.bio = desc
         self.rating = rating
@@ -34,6 +34,7 @@ class Upload{
         let imageFile = PFFile(name:"image.jpeg", data:imageData!)
         uploadObject["image"] = imageFile
         }
+        uploadObject["rating"] = self.rating
         PFGeoPoint.geoPointForCurrentLocationInBackground {
             (geoPoint: PFGeoPoint?, error: NSError?) -> Void in
             if error == nil {
