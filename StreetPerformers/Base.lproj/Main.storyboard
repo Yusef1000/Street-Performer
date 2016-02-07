@@ -273,15 +273,15 @@
             </objects>
             <point key="canvasLocation" x="1827" y="116"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="8lj-Jv-NbF">
             <objects>
-                <viewController id="9mY-ui-qgz" sceneMemberID="viewController">
+                <viewController id="9mY-ui-qgz" customClass="SignUpViewController" customModule="StreetPerformers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TmE-Jy-iSq"/>
                         <viewControllerLayoutGuide type="bottom" id="FcM-Vq-eqr"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NL0-A7-iNN">
+                    <view key="view" contentMode="scaleToFill" id="NL0-A7-iNN" customClass="SignUpView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -300,6 +300,13 @@
                                         <rect key="frame" x="0.0" y="30" width="600" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Facebook"/>
+                                        <color key="backgroundColor" red="0.085373706810000005" green="0.3958605831" blue="0.64741586539999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Facebook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="facebookSignUp" destination="9mY-ui-qgz" eventType="touchUpInside" id="D1E-BZ-TCN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
