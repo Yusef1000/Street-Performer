@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QBS-Em-jtL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QBS-Em-jtL">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -78,7 +78,7 @@
                         <viewControllerLayoutGuide type="bottom" id="baX-mA-hzs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W8B-P6-cBj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WI4-bY-rXL">
@@ -107,11 +107,9 @@
             <objects>
                 <tabBarController id="r73-Mu-Icg" sceneMemberID="viewController">
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="Rsv-YA-mam">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Rsv-YA-mam">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="XvO-BX-xBg" kind="relationship" relationship="viewControllers" id="WFG-A8-Vt0"/>
@@ -133,7 +131,7 @@
                         <viewControllerLayoutGuide type="bottom" id="It3-LF-Y98"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="U5U-LH-9CA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6w0-es-89k">
@@ -204,7 +202,7 @@
                         <viewControllerLayoutGuide type="bottom" id="noQ-Ku-7aj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WKv-kZ-cCF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="951"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bck-q3-ap4" customClass="TPKeyboardAvoidingScrollView">
@@ -345,14 +343,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apppppppp-14" translatesAutoresizingMaskIntoConstraints="NO" id="eRu-ER-YaE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apppppppp-14" translatesAutoresizingMaskIntoConstraints="NO" id="eRu-ER-YaE">
                                 <rect key="frame" x="0.0" y="43" width="606" height="567"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="yUq-a9-Nul">
-                                <rect key="frame" x="0.0" y="200" width="600" height="119"/>
+                                <rect key="frame" x="0.0" y="200" width="600" height="123"/>
                                 <subviews>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmO-Gw-pim" userLabel="Google">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="47"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="InnercityRegular" family="Innercity" pointSize="30"/>
                                         <state key="normal" title="Continue to App">
@@ -363,7 +361,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aR-uj-bDa" userLabel="Facebook">
-                                        <rect key="frame" x="0.0" y="72" width="600" height="47"/>
+                                        <rect key="frame" x="0.0" y="74" width="600" height="49"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="InnercityRegular" family="Innercity" pointSize="30"/>
                                         <state key="normal" title="Join via Facebook">
@@ -422,4 +420,5 @@
         <image name="search" width="50" height="50"/>
         <image name="share page backdrop (slow scroll)" width="616" height="5853"/>
     </resources>
+    <color key="tintColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

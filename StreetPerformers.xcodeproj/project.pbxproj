@@ -39,6 +39,7 @@
 		16FA8FA71C66C74100AC454B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA8FA61C66C74100AC454B /* Category.swift */; };
 		802E90E51C66F0950091CCC4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802E90E41C66F0950091CCC4 /* MapViewController.swift */; };
 		B5ADCAB41C66A64700D8D123 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ADCAB31C66A64700D8D123 /* SearchViewController.swift */; };
+		B5D94BF81C6787E60012E030 /* InnercityRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5D94BF71C6787DA0012E030 /* InnercityRegular.otf */; };
 		B5DBC0491C66EFB300BC72B4 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DBC0481C66EFB300BC72B4 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		16FA8FA61C66C74100AC454B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		802E90E41C66F0950091CCC4 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B5ADCAB31C66A64700D8D123 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = "../Street-Performer/StreetPerformers/SearchViewController.swift"; sourceTree = SOURCE_ROOT; };
+		B5D94BF71C6787DA0012E030 /* InnercityRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = InnercityRegular.otf; sourceTree = "<group>"; };
 		B5DBC0481C66EFB300BC72B4 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 		168DA22C1C66771A00BF983C = {
 			isa = PBXGroup;
 			children = (
+				B5D94BF71C6787DA0012E030 /* InnercityRegular.otf */,
 				16D48A321C66D08A00D47ACE /* libsqlite3.dylib */,
 				16D48A331C66D08A00D47ACE /* libz.1.dylib */,
 				160832A71C66F79B00818960 /* ParseFacebookUtilsV4.framework */,
@@ -306,6 +309,7 @@
 			files = (
 				168DA2451C66771A00BF983C /* LaunchScreen.storyboard in Resources */,
 				168DA2421C66771A00BF983C /* Assets.xcassets in Resources */,
+				B5D94BF81C6787E60012E030 /* InnercityRegular.otf in Resources */,
 				168DA2401C66771A00BF983C /* Main.storyboard in Resources */,
 				16D48A391C66DA3B00D47ACE /* PerformanceListRow.xib in Resources */,
 				16FA8FA31C66C45800AC454B /* SearchButtonCell.xib in Resources */,

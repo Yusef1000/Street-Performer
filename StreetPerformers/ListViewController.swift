@@ -21,6 +21,7 @@ class PerformanceListRow: UITableViewCell{
     func assignRow(perf: PFObject){
         self.stars.userInteractionEnabled = false
         //imageDisplay.image = //
+        
         bio.text = perf["biography"] as? String
         (perf["image"] as! PFFile).getDataInBackgroundWithBlock { (data, err) -> Void in
             if let imgData = data{
@@ -66,6 +67,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCellWithIdentifier("PerformanceCell", forIndexPath: indexPath) as! PerformanceListRow
+        //cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
+        
         cell.userLoc = self
         cell.assignRow(performances![indexPath.row])
         return cell
