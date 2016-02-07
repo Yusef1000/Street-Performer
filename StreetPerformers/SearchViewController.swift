@@ -15,7 +15,7 @@ class SearchButtonCell: UICollectionViewCell{
         uImage.image = cat.image
     }
 }
-class SearchViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+class SearchViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
     @IBOutlet var collectionView : UICollectionView!
     var categoryList = [Category(description: "Dance", image: UIImage(named: "buttons-1")!),Category(description: "Vocals", image: UIImage(named: "buttons-2")!),Category(description: "Instruments", image: UIImage(named: "buttons-3")!),Category(description: "Make-Up", image: UIImage(named: "buttons-4")!),Category(description: "Stunts", image: UIImage(named: "buttons-5")!)]
     
@@ -45,6 +45,14 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         print("tapped")
     }
+    
+    func collectionView(collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize{
+            let size = (collectionView.frame.width / 2) - 6
+            return CGSize(width: size, height: size * 0.66)
+    }
+    
     /*
     // MARK: - Navigation
 

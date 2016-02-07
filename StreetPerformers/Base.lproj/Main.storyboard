@@ -93,7 +93,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="jeR-1z-wta">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7fZ-GV-J8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="r73-Mu-Icg" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="Rsv-YA-mam">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -107,6 +106,7 @@
                         <segue destination="NSw-Eq-7jL" kind="relationship" relationship="viewControllers" id="Hqm-QP-WhL"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fZ-GV-J8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="699" y="-725"/>
         </scene>
@@ -140,7 +140,8 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ASz-Xe-4xh">
-                                <rect key="frame" x="0.0" y="66" width="600" height="485"/>
+                                <rect key="frame" x="5" y="71" width="590" height="480"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kla-1d-gSp">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -164,10 +165,10 @@
                         <constraints>
                             <constraint firstItem="6w0-es-89k" firstAttribute="centerX" secondItem="U5U-LH-9CA" secondAttribute="centerX" id="HqW-xk-Aas"/>
                             <constraint firstItem="6w0-es-89k" firstAttribute="top" secondItem="u32-s6-zvy" secondAttribute="bottom" id="JEO-TL-4ew"/>
-                            <constraint firstItem="ASz-Xe-4xh" firstAttribute="top" secondItem="6w0-es-89k" secondAttribute="bottom" constant="-5" id="UBG-OS-xJP"/>
+                            <constraint firstItem="ASz-Xe-4xh" firstAttribute="top" secondItem="6w0-es-89k" secondAttribute="bottom" id="UBG-OS-xJP"/>
                             <constraint firstItem="It3-LF-Y98" firstAttribute="top" secondItem="ASz-Xe-4xh" secondAttribute="bottom" id="f4P-qa-zSI"/>
                             <constraint firstItem="ASz-Xe-4xh" firstAttribute="centerX" secondItem="U5U-LH-9CA" secondAttribute="centerX" id="fQU-oR-eTx"/>
-                            <constraint firstItem="ASz-Xe-4xh" firstAttribute="width" secondItem="U5U-LH-9CA" secondAttribute="width" id="g36-Hf-GyS"/>
+                            <constraint firstItem="ASz-Xe-4xh" firstAttribute="width" secondItem="U5U-LH-9CA" secondAttribute="width" constant="-10" id="g36-Hf-GyS"/>
                             <constraint firstItem="6w0-es-89k" firstAttribute="width" secondItem="U5U-LH-9CA" secondAttribute="width" id="s0C-db-lvv"/>
                         </constraints>
                     </view>
