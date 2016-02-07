@@ -32,6 +32,7 @@
 		16FA8F991C66BFA800AC454B /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA8F981C66BFA800AC454B /* Upload.swift */; };
 		16FA8FA31C66C45800AC454B /* SearchButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16FA8FA21C66C45800AC454B /* SearchButtonCell.xib */; };
 		16FA8FA71C66C74100AC454B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA8FA61C66C74100AC454B /* Category.swift */; };
+		802E90E51C66F0950091CCC4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802E90E41C66F0950091CCC4 /* MapViewController.swift */; };
 		B5ADCAB41C66A64700D8D123 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ADCAB31C66A64700D8D123 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		16FA8F981C66BFA800AC454B /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
 		16FA8FA21C66C45800AC454B /* SearchButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchButtonCell.xib; sourceTree = "<group>"; };
 		16FA8FA61C66C74100AC454B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		802E90E41C66F0950091CCC4 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B5ADCAB31C66A64700D8D123 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = "../Street-Performer/StreetPerformers/SearchViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -191,6 +193,7 @@
 			children = (
 				B5ADCAB31C66A64700D8D123 /* SearchViewController.swift */,
 				16D48A361C66D93B00D47ACE /* ListViewController.swift */,
+				802E90E41C66F0950091CCC4 /* MapViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				16D48A371C66D93B00D47ACE /* ListViewController.swift in Sources */,
 				16D48A3B1C66DEC900D47ACE /* StarsView.swift in Sources */,
 				16FA8FA71C66C74100AC454B /* Category.swift in Sources */,
+				802E90E51C66F0950091CCC4 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
