@@ -43,9 +43,109 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.map.delegate = self
-        loadLocation()
+        brownUni()
+        brownUni1()
+        brownUni2()
+        brownUni3()
+        brownUni4()        
+        
+        //loadLocation()
+        //loadPerformances()
     }
-    
+    func brownUni(){
+    //Coordinates
+    let brownUniLat: CLLocationDegrees = 30.1033
+    let brownUniLong: CLLocationDegrees = -95.6337
+    let brownUniCoordinate = CLLocationCoordinate2D(latitude: brownUniLat, longitude: brownUniLong)
+    //Span
+    let latDelta:CLLocationDegrees = 0.02
+    let longDelta:CLLocationDegrees = 0.02
+    let brownUniSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
+    let brownUniRegion = MKCoordinateRegion(center: brownUniCoordinate, span: brownUniSpan)
+    //PIN AND DETAILS
+    map.setRegion(brownUniRegion, animated: true)
+    let brownUniAnnotation = MKPointAnnotation()
+    brownUniAnnotation.title = "Mike Sullivan"
+    brownUniAnnotation.subtitle = "Professional HipHop Dancer"
+    brownUniAnnotation.coordinate = brownUniCoordinate
+    //brownUniAnnotation.provideImageData(<#T##data: UnsafeMutablePointer<Void>##UnsafeMutablePointer<Void>#>, bytesPerRow: <#T##Int#>, origin: <#T##Int#>, <#T##y: Int##Int#>, size: <#T##Int#>, <#T##height: Int##Int#>, userInfo: <#T##AnyObject?#>)
+    map.addAnnotation(brownUniAnnotation)
+    }
+    func brownUni1(){
+        //Coordinates
+        let brownUniLat: CLLocationDegrees = 30.1020
+        let brownUniLong: CLLocationDegrees = -95.6320
+        let brownUniCoordinate = CLLocationCoordinate2D(latitude: brownUniLat, longitude: brownUniLong)
+        //Span
+        let latDelta:CLLocationDegrees = 0.02
+        let longDelta:CLLocationDegrees = 0.02
+        let brownUniSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
+        let brownUniRegion = MKCoordinateRegion(center: brownUniCoordinate, span: brownUniSpan)
+        //PIN AND DETAILS
+        map.setRegion(brownUniRegion, animated: true)
+        let brownUniAnnotation = MKPointAnnotation()
+        brownUniAnnotation.title = "Trisha Tosh"
+        brownUniAnnotation.subtitle = "Violin Player"
+        brownUniAnnotation.coordinate = brownUniCoordinate
+        map.addAnnotation(brownUniAnnotation)
+    }
+    func brownUni2(){
+        //Coordinates
+        let brownUniLat: CLLocationDegrees = 30.1000
+        let brownUniLong: CLLocationDegrees = -95.6300
+        let brownUniCoordinate = CLLocationCoordinate2D(latitude: brownUniLat, longitude: brownUniLong)
+        //Span
+        let latDelta:CLLocationDegrees = 0.02
+        let longDelta:CLLocationDegrees = 0.02
+        let brownUniSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
+        let brownUniRegion = MKCoordinateRegion(center: brownUniCoordinate, span: brownUniSpan)
+        //PIN AND DETAILS
+        map.setRegion(brownUniRegion, animated: true)
+        let brownUniAnnotation = MKPointAnnotation()
+        brownUniAnnotation.title = "Billy Bob"
+        brownUniAnnotation.subtitle = "Opera Singer"
+        brownUniAnnotation.coordinate = brownUniCoordinate
+        map.addAnnotation(brownUniAnnotation)
+    }
+    func brownUni3(){
+        //Coordinates
+        let brownUniLat: CLLocationDegrees = 30.0120
+        let brownUniLong: CLLocationDegrees = -95.6345
+        let brownUniCoordinate = CLLocationCoordinate2D(latitude: brownUniLat, longitude: brownUniLong)
+        //Span
+        let latDelta:CLLocationDegrees = 0.02
+        let longDelta:CLLocationDegrees = 0.02
+        let brownUniSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
+        let brownUniRegion = MKCoordinateRegion(center: brownUniCoordinate, span: brownUniSpan)
+        //PIN AND DETAILS
+        map.setRegion(brownUniRegion, animated: true)
+        let brownUniAnnotation = MKPointAnnotation()
+        brownUniAnnotation.title = "JOHN CENA!!!"
+        brownUniAnnotation.subtitle = "Profession Wrestler"
+        brownUniAnnotation.coordinate = brownUniCoordinate
+        map.addAnnotation(brownUniAnnotation)
+    }
+    func brownUni4(){
+        //Coordinates
+        let brownUniLat: CLLocationDegrees = 30.10100
+        let brownUniLong: CLLocationDegrees = -95.6340
+        let brownUniCoordinate = CLLocationCoordinate2D(latitude: brownUniLat, longitude: brownUniLong)
+        //Span
+        let latDelta:CLLocationDegrees = 0.02
+        let longDelta:CLLocationDegrees = 0.02
+        let brownUniSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
+        let brownUniRegion = MKCoordinateRegion(center: brownUniCoordinate, span: brownUniSpan)
+        //PIN AND DETAILS
+        map.setRegion(brownUniRegion, animated: true)
+        let brownUniAnnotation = MKPointAnnotation()
+        brownUniAnnotation.title = "Thomas Jones"
+        brownUniAnnotation.subtitle = "Dedicated Drummer"
+        brownUniAnnotation.coordinate = brownUniCoordinate
+        map.addAnnotation(brownUniAnnotation)
+    }
+}
+    /*
+
         func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
             if (annotation is MKUserLocation) {
                 //if annotation is not an MKPointAnnotation (eg. MKUserLocation),
@@ -75,11 +175,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             
             return anView
 
-        }
+    }
 
     
-    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
-    }
+    //func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+    
     
     
     var location: PFGeoPoint?
@@ -97,8 +197,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 let brownUniRegion = MKCoordinateRegion(center: loc, span: brownUniSpan)
                 self.map.setRegion(brownUniRegion, animated: true)
                 self.loadPerformances()
+            
             }
         }
+    
     }
     var performances: [PFObject]?
     func loadPerformances(){
@@ -134,6 +236,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 
     }
     }
+*/
 //    func brownUni(){
 //        PFGeoPoint.geoPointForCurrentLocationInBackground {
 //            (geoPoint: PFGeoPoint?, error: NSError?) -> Void in
@@ -161,4 +264,3 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 //            }
 //        }
 //}
-}

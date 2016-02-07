@@ -475,6 +475,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = StreetPerformers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HAB.StreetPerformers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +497,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = StreetPerformers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HAB.StreetPerformers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
