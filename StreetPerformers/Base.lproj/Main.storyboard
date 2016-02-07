@@ -341,6 +341,6 @@
         <image name="camera" width="25" height="25"/>
         <image name="list" width="25" height="25"/>
         <image name="map" width="25" height="25"/>
-        <image name="search" width="25" height="25"/>
+        <image name="search" width="50" height="50"/>
     </resources>
 </document>
