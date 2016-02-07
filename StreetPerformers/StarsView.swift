@@ -53,6 +53,11 @@ class StarsView: UIView{
 
     }
 
-
+    func setValue(i : Int){
+        self.starValue = i
+        for (index, button) in ratingButtons.enumerate() {
+            button.selected = index >= i
+        }
+    }
 
 }

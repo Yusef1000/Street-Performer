@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="434" height="141"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HON-dN-mHj">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HON-dN-mHj">
                         <rect key="frame" x="8" y="8" width="128" height="128"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="HON-dN-mHj" secondAttribute="height" multiplier="1:1" id="1Lp-MY-WJl"/>
@@ -28,28 +28,38 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t3E-XW-IeK">
-                        <rect key="frame" x="144" y="37" width="100" height="49"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance at request" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5m9-kH-OjN">
-                        <rect key="frame" x="144" y="94" width="149" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance at request" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5m9-kH-OjN">
+                        <rect key="frame" x="144" y="73" width="149" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKC-HQ-QgY" customClass="StarsView" customModule="StreetPerformers" customModuleProvider="target">
+                        <rect key="frame" x="143" y="37" width="283" height="31"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="FKC-HQ-QgY" secondAttribute="height" multiplier="9:1" id="7d9-en-dPH"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="FKC-HQ-QgY" firstAttribute="top" secondItem="tL9-PZ-P19" secondAttribute="bottom" constant="8" id="BD6-e9-XXc"/>
                     <constraint firstAttribute="leadingMargin" secondItem="HON-dN-mHj" secondAttribute="leading" id="E0T-d2-TPZ"/>
+                    <constraint firstItem="FKC-HQ-QgY" firstAttribute="leading" secondItem="HON-dN-mHj" secondAttribute="trailing" constant="7" id="VBS-W0-3oD"/>
+                    <constraint firstItem="5m9-kH-OjN" firstAttribute="top" secondItem="FKC-HQ-QgY" secondAttribute="bottom" constant="5" id="Zrw-bm-f3G"/>
                     <constraint firstAttribute="topMargin" secondItem="HON-dN-mHj" secondAttribute="top" id="i9B-55-fgf"/>
                     <constraint firstItem="tL9-PZ-P19" firstAttribute="top" secondItem="HON-dN-mHj" secondAttribute="top" id="jOB-ma-Klf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FKC-HQ-QgY" secondAttribute="trailing" id="ndS-Pv-D5d"/>
                     <constraint firstItem="tL9-PZ-P19" firstAttribute="leading" secondItem="HON-dN-mHj" secondAttribute="trailing" constant="8" id="qBT-Z2-N6l"/>
                     <constraint firstAttribute="bottomMargin" secondItem="HON-dN-mHj" secondAttribute="bottom" constant="-3" id="tdh-sg-p7d"/>
+                    <constraint firstItem="5m9-kH-OjN" firstAttribute="leading" secondItem="HON-dN-mHj" secondAttribute="trailing" constant="8" id="yku-bf-03E"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="bio" destination="tL9-PZ-P19" id="4g4-2n-DGQ"/>
                 <outlet property="distanceLabel" destination="5m9-kH-OjN" id="tNP-bR-zvK"/>
                 <outlet property="imageDisplay" destination="HON-dN-mHj" id="hck-G3-8Y8"/>
+                <outlet property="stars" destination="FKC-HQ-QgY" id="akv-65-H7N"/>
             </connections>
             <point key="canvasLocation" x="378" y="325"/>
         </tableViewCell>
