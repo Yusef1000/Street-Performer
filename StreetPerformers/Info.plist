@@ -91,5 +91,7 @@
     <array>
         <string>fbauth2</string>
     </array>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Allow location to vibe!</string>
 </dict>
 </plist>
