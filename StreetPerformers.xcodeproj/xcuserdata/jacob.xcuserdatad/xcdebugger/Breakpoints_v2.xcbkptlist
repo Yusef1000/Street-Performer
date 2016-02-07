@@ -135,11 +135,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreetPerformers/MapViewController.swift"
-            timestampString = "476515211.595067"
+            timestampString = "476535175.383179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "brownUni()"
             landmarkType = "5">
          </BreakpointContent>
@@ -151,11 +151,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreetPerformers/MapViewController.swift"
-            timestampString = "476515212.842029"
+            timestampString = "476535175.383179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "brownUni()"
             landmarkType = "5">
          </BreakpointContent>
@@ -167,11 +167,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreetPerformers/MapViewController.swift"
-            timestampString = "476515215.368026"
+            timestampString = "476535175.383179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "brownUni()"
             landmarkType = "5">
          </BreakpointContent>
@@ -183,11 +183,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreetPerformers/MapViewController.swift"
-            timestampString = "476515215.651014"
+            timestampString = "476535175.383179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "brownUni()"
             landmarkType = "5">
          </BreakpointContent>
@@ -199,11 +199,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreetPerformers/MapViewController.swift"
-            timestampString = "476515217.880016"
+            timestampString = "476535175.383179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "brownUni()"
             landmarkType = "5">
          </BreakpointContent>
@@ -215,11 +215,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreetPerformers/MapViewController.swift"
-            timestampString = "476515218.232025"
+            timestampString = "476535175.383179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "brownUni()"
             landmarkType = "5">
          </BreakpointContent>
@@ -231,11 +231,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreetPerformers/MapViewController.swift"
-            timestampString = "476515277.796211"
+            timestampString = "476535175.383179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "brownUni()"
             landmarkType = "5">
             <Locations>
@@ -279,11 +279,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreetPerformers/MapViewController.swift"
-            timestampString = "476515278.17992"
+            timestampString = "476535175.383179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "brownUni()"
             landmarkType = "5">
          </BreakpointContent>
@@ -295,11 +295,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreetPerformers/MapViewController.swift"
-            timestampString = "476515284.69321"
+            timestampString = "476535175.383179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "brownUni()"
             landmarkType = "5">
          </BreakpointContent>
@@ -311,11 +311,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreetPerformers/MapViewController.swift"
-            timestampString = "476518054.590144"
+            timestampString = "476535175.383179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "brownUni()"
             landmarkType = "5">
          </BreakpointContent>
@@ -611,7 +611,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreetPerformers/StarsView.swift"
@@ -627,7 +627,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreetPerformers/StarsView.swift"
@@ -637,6 +637,134 @@
             startingLineNumber = "59"
             endingLineNumber = "59"
             landmarkName = "setValue(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StreetPerformers/MapViewController.swift"
+            timestampString = "476535175.383179"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "loadLocation()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StreetPerformers/MapViewController.swift"
+            timestampString = "476534933.329905"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "loadLocation()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StreetPerformers/MapViewController.swift"
+            timestampString = "476534936.841895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "loadLocation()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StreetPerformers/MapViewController.swift"
+            timestampString = "476535175.383179"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "loadLocation()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StreetPerformers/MapViewController.swift"
+            timestampString = "476534969.251022"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "loadLocation()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StreetPerformers.MapViewController.loadLocation (StreetPerformers.MapViewController)() -&gt; ()"
+                  moduleName = "StreetPerformers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacob/Documents/PerformersClone/Street-Performer/StreetPerformers/MapViewController.swift"
+                  timestampString = "476535263.565486"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StreetPerformers.MapViewController.(loadLocation (StreetPerformers.MapViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "StreetPerformers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacob/Documents/PerformersClone/Street-Performer/StreetPerformers/MapViewController.swift"
+                  timestampString = "476535263.565638"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StreetPerformers/MapViewController.swift"
+            timestampString = "476534989.525039"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
